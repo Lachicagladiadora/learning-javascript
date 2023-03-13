@@ -2,7 +2,7 @@
 // JS -> paradigma de objetos
 // como llevas un objeto fisico al paradigma de objetos: generamos una variable y agregamos sus propiedades
 
-// definimos el objeto con nombr y listando sus propiedades
+// definimos el objeto con nombre y listando sus propiedades
 var pen = {
     marca: "stabilo",
     modelo: "sin borrador",
