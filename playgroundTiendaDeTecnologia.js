@@ -1,4 +1,4 @@
-/Playground: tienda de tecnología
+//Playground: tienda de tecnología
 //guia
 //En este desafío debes retornar un mensaje distinto dependiendo del artículo de tecnología que recibas:
 // Si recibes una "computadora", debes retornar el mensaje "Con mi computadora puedo programar usando JavaScript".
