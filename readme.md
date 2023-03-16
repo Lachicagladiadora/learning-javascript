@@ -15,6 +15,7 @@
     12. loops (for, for...of and while)
     13. objects (definition and constructive function)
     14. array transversal methods (.filter, .map, .find, .forEach, and .some)
+    15. manipulation DOM (connect JS to HTML, reading and writing HTML from JS)
 
 ## exercises to practice
     * basic level
