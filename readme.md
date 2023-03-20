@@ -18,6 +18,7 @@
     15. manipulation DOM (connect JS to HTML, reading and writing HTML from JS)
     16. events and addEventListener in JS (how to create simple events and with functions)
 
+
 ## exercises to practice
     * basic level
         1. playground 1: returns the type (retorna el tipo)
@@ -27,7 +28,8 @@
         5. playground 5: rescue the student (rescata al estudiante)
         6. playground 6: driving permit (permiso para conducir)
         7. playground 7: fix the bug (arregla el bug)
-
+    
+    * contribution to ecommerce project
 
 
 ## challenges
@@ -35,4 +37,4 @@
 
 
 ## Test
-    - test de java script
+    - javascript test
