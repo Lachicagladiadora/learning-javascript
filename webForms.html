@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Forms</title>
+</head>
+<body>
+    <h1>Web Forms</h1>
+
+    <form action="">
+
+        <fieldset>
+            <legend>"input" type "text" and "submit"</legend>
+            <div>
+            <input type="text" id="textUsername" name="username", placeholder="Insert your username" value="Francisco">
+        </div>
+        <div>
+            <label>
+                Password
+                <input type="text", id="textPassword" name="Insert your password" required value="12345678">
+            </label>
+        </div>
+        <!-- <div>
+            <input type="submit" id="submitLogin" value="Log in">
+        </div> -->
+        </fieldset>
+
+        <fieldset>
+            <legend>"input" type "email", "date" and "number"</legend>
+            <div>
+            <label for="">
+                Insert your email
+                <input type="email" id="email" required value="asdfg@jddjk.com">
+            </label>
+        </div>
+        <div>
+            <label for="">
+                Insert your birthdate
+                <input type="date" id="date" value="1979-06-29">
+            </label>
+        </div>
+        <div>
+            <label for="">
+                Insert number of products
+                <input type="number" id="number" value="3" readonly>
+            </label>
+        </div>
+        <div>
+            <label for="">
+                Insert your phone number
+                <input type="number" id="phoneNumber" value="934784367" maxlength="12 number" minlength="9 number">
+            </label>
+        </div>
+        </fieldset>
+        
+    </form> 
+    <fieldset>
+        <legend>Input type "checkbox"</legend>
+        <label for="">
+            <input type="checkbox" id="checkbox1">
+            Deporte
+        </label>
+        <label for="">
+            <input type="checkbox" id="checkbox2" >
+            Leer
+        </label>
+        <label for="">
+            <input type="checkbox" id="checkbox3">
+            Ir al cine
+        </label>
+        <label for="">
+            <input type="checkbox" id="checkbox4">
+            Viajar
+        </label>
+        <!-- <label for="">
+            <input type="checkbox" id="checkbox5">
+            Dormir
+        </label> -->
+    </fieldset>
+    <fieldset>
+        <legend>Input type "radio"</legend>
+        <label for=""><input type="radio" id="gender" name="gender">Mujer</label>
+        <label for=""><input type="radio" id="gender" name="gender" value="Varon">Varon</label>
+        <label for=""><input type="radio" id="gender" name="gender">Prefiero no decirlo</label>
+    </fieldset>
+    <fieldset>
+        <legend>Select, options and textarea</legend>
+        <label for="country">Escoge tu pais</label> 
+        <select name="country" id="country">
+        <optgroup label="America">
+            <option value="Peru">Peru</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Colombia">Colombia</option>
+        </optgroup>
+        <optgroup label="Europa">
+            <option value="Francia">Francia</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Alemania">Alemania</option>
+        </optgroup>
+        <optgroup label="Asia">
+            <option value="China">China</option>
+            <option value="Japon">Japon</option>
+            <option value="Thailandia">Thailandia</option>
+        </optgroup>
+        <textarea name="mensaje" id="textArea" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+        </select>
+    </fieldset>
+
+<!-- TYPES OF BUTTON -->
+    <br>
+    <button type="button">  tipo button</button> 
+    <!-- <img src="img02.png" height="400px" alt=""> -->
+    <button type="menu">tipo menu</button>
+    <button type="reset">tipo reset</button> 
+    <button type="submit" id="submit">tipo submit</button>
+    
+    <script src = "./webForms.js"></script>
+
+</body>
+</html>
