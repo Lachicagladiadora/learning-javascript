@@ -15,11 +15,13 @@ console.log(secondName);
 
 
 //let
-let fruit='Apple';//declara y asigna
-fruit='Kiwi';//reasignar
+//declara y asigna
+let fruit='Apple';
+//reasignar
+// fruit='Kiwi';
 console.log(fruit);
 
-let fruit='Banana';
+// let fruit='Banana';
 console.log(fruit);
 
 
