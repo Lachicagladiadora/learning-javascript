@@ -35,8 +35,10 @@
         5. playground 5: rescue the student (rescata al estudiante)
         6. playground 6: driving permit (permiso para conducir)
         7. playground 7: fix the bug (arregla el bug)
-    
     * contribution to ecommerce project
+
+    * closures and scope
+        1. playground 1: create a closure to add (crea un closure para sumar)
 
 
 ## challenges
