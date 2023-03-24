@@ -11,6 +11,7 @@
         - reassignment and redeclaration of variables
         - strict mode
     5. closure
+        - lexical scope
     6. hoisting (variables and functions)
     7. coercion (implicit and explicit)
     8. true adn falsy values 
