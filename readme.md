@@ -39,7 +39,7 @@
 
     * closures and scope
         1. playground 1: create a closure to add (crea un closure para sumar)
-
+        2. playground 2: closure to store pet data (closure para almacenar datos de mascotas)
 
 ## challenges
     - challenge: rock paper scissors game
