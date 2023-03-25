@@ -1,6 +1,9 @@
 // HOISTING
 // no declarar una variable a tiempo para ser utilizada
 
+// se elevan las variables no asignadas (despues de lo debido) y la invocacion de funciones declarativa.//variable(undefined)
+// pero si no no asignamos a la variable un valor, la consola nos dara error.
+
 // declaramos una variable
 // var miNombre;
 // inicializamos una variable
