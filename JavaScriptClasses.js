@@ -15,8 +15,8 @@ class Student {
     }
 }
 
-const miguelito = new Student (
-    "Miguel",
+const carlos= new Student (
+    "Carlos",
     22,
     [
         "Curso de Analisis de Negocios para Ciencia de Datos",
