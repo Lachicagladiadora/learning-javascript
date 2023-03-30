@@ -44,7 +44,7 @@
 
 ## challenges
     - challenge: rock paper scissors game
-
+    - game with objects
 
 ## Test
     - javascript test
