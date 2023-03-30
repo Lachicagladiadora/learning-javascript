@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(57, 56, 56);
+    
+}
+
+h1 {
+    text-emphasis: none;
+    color: #7cb8be;
+    text-align: center;
+}
+
+button{
+    size: 30rem;
+    background-color: rgb(107, 46, 164);
+    color: rgb(255, 247, 0);
+    font-size: 23px;
+    border-radius: 10px;
+}
+
+#player {
+    text-align: center;
+    justify-content: center;
+}
+
+.life-wrapper{
+position: relative;
+width: 100px;
+    height: 20px;
+    background-color: #123;
+    border-radius: 2em;
+}
+
+.life-wrapper-enemy{
+    position: relative;
+    width: 100px;
+        height: 20px;
+        background-color: #123;
+        border-radius: 2em;
+    float: right;
+    color: azure;
+    }
+
+.life{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: green;
+    border-radius: 2em;
+}
+
+.addMount {
+    padding-left: 30px;
+    float: left;
+    width: 160px;
+    
+}
+
+
+.addGuns {
+    padding-left: 30px;
+    /* float: left; */
+    /* width: 60px; */
+}
+
+.take {
+    padding-right: 30px;
+    /* float: right; */
+}
+    
+    
+
