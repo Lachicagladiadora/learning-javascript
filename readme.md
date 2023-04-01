@@ -48,6 +48,7 @@
 ## challenges
     - challenge: rock paper scissors game
     - game with objects
+    - game moving ball with keyboard
 
 ## Test
     - javascript test
