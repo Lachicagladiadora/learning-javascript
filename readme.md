@@ -49,6 +49,7 @@
     - challenge: rock paper scissors game
     - game with objects
     - game moving ball with keyboard
+    - game taming horses
 
 ## Test
     - javascript test
