@@ -30,4 +30,12 @@ export function sumWithClosure(firstNum) {
 
   }
   sumWithClosure(2)(3)
+//other code
+  export function sumWithClosure(firstNum) {
+    // Tu código aquí 👈
+    return function (secondNum) {
+      if (Boolean(secondNum) === false) return firstNum
+      else return firstNum+secondNum
+    }
+  }
   
