@@ -51,6 +51,7 @@
     - game with objects
     - game moving ball with keyboard
     - game taming horses
+    - calculator (calculator with objects)
 
 ## Test
     - javascript test
