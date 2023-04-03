@@ -23,6 +23,7 @@
     14. objects (definition and constructive function)
     15. array transversal methods (.filter, .map, .find, .forEach, and .some)
     16. manipulation DOM (connect JS to HTML, reading and writing HTML from JS)
+        -DOM with appendchild
     17. events and addEventListener in JS (how to create simple events and with functions)
     18. debugging
     19. object-oriented programming (POO)
