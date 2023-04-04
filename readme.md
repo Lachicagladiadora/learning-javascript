@@ -46,6 +46,9 @@
         1. playground 1: create a closure to add (crea un closure para sumar)
         2. playground 2: closure to store pet data (closure para almacenar datos de mascotas)
 
+    * object basic level
+        1. playground 1: class management (manejo de clases)
+
 ## challenges
     - challenge: rock paper scissors game
     - game with objects
