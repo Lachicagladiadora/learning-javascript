@@ -28,6 +28,7 @@
     18. debugging
     19. object-oriented programming (POO)
         - object literal and prototype
+        - practice object methods
     20.
 
 
