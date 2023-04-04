@@ -13,7 +13,9 @@ Crea una clase llamada "Integrante" con las propiedades:
 
 nombre - string
 instrumento - string
-Escribe la lógica para agregar integrantes a la clase Banda en la función agregarIntegrante. En esta función no debe dejar agregar más de un baterista, es decir hay que validar que solo se pueda agregar un integrante con instrumento "Bateria".
+Escribe la lógica para agregar integrantes a la clase Banda en la función agregarIntegrante. 
+En esta función no debe dejar agregar más de un baterista, es decir hay que validar que solo se pueda agregar un integrante 
+con instrumento "Bateria".
 
 La solución debería tener un input y output como los siguientes:
 
@@ -41,36 +43,30 @@ Output
 
 //code
 class Banda {
-  constructor({
-    nombre,
-    generos = [],
-  }) {
+  constructor({nombre,generos = [],}) {
     this.nombre = nombre;
     this.generos = generos;
     this.integrantes = [];
   }
   agregarIntegrante(integranteNuevo) {
     // Tu código aquí 👈
+    
+    if (Banda.integrantes.some((obj => obj.instrumento.toLowerCase().trim() === 'bateria' ))) console.log('add other integrant')
+    else  Banda.integrantes.push(integranteNuevo) 
+
   }
 }
 
 //Crear clase Integrante
 class Integrante {
   // Tu código aquí 👈
-  constructor({
-    nombre,
-    instrumento
-  }) {
+  constructor({nombre,instrumento}) {
     this.nombre = nombre
     this.instrumento=instrumento
   }
-
 }
 
-export {
-  Banda,
-  Integrante,
-}
+export {Banda,Integrante,}
 
 
 
