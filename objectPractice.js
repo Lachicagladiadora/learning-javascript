@@ -57,10 +57,10 @@ livro
     [[Prototype]]: ƒ book({title, author, pages, format, type}) */
 
 //use of 'Object.keys()' -> crea una matriz con las claves del objeto
-const keys=Object.keys(book1)
-console.log(keys)  //(6) ['title', 'author', 'pages', 'format', 'type', 'typeFormat']
-const keys=Object.keys(livro)
-console.log(keys)  //(4) ['title', 'author', 'format', 'type']
+const keysBook=Object.keys(book1)
+console.log(keysBook)  //(6) ['title', 'author', 'pages', 'format', 'type', 'typeFormat']
+const keysLivro=Object.keys(livro)
+console.log(keysLivro)  //(4) ['title', 'author', 'format', 'type']
 
 // use of 'Object.values()' -> cre una matriz co los valores del objeto
 Object.values(book1) // (6) ['Los rios profundos', 'Valdelomar', 754, 'PDF', 'novel', ƒ]
@@ -87,35 +87,35 @@ typeFormat: ƒ () */
 
 
 //use of 'Object.freeze() -> NO permite modificaciones de ningun tipo
-const user={
+const user1 ={
     userName:'Pablito',
     password:'12345678'
 }
 
-user //{userName: 'Pablito', password: '12345678'}
+//{userName: 'Pablito', password: '12345678'}
 
-const newUser=Object.freeze(user)
+const newUser=Object.freeze(user1)
 newUser.userName='juanita';
 newUser.password='********';
 newUser.otherProp=true
 
-user //{userName: 'Pablito', password: '12345678'}
+user1 //{userName: 'Pablito', password: '12345678'}
 
 
 // use of 'Object.seal()' -> Modifica las propiedades e impide la adicion de propiedades nuevas
-const user={
+const user2 ={
     userName:'Pablito',
     password:'12345678'
 }
 
 user  //{userName: 'Pablito', password: '12345678'}
 
-const newUser=Object.seal(user)
+const newUser=Object.seal(user2)
 newUser.userName='juanita';
 newUser.password='********';
 newUser.otherProp=true
 
-user  //{userName: 'juanita', password: '********'}
+user2  //{userName: 'juanita', password: '********'}
 
 
 // use of 'Object.getPrototypeOf()' -> obtener la propiedad de [[Prototype]] /tambien accesible por _proto_
