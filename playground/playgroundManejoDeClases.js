@@ -51,8 +51,8 @@ class Banda {
   agregarIntegrante(integranteNuevo) {
     // Tu código aquí 👈
     
-    if (Banda.integrantes.some((obj => obj.instrumento.toLowerCase().trim() === 'bateria' ))) console.log('add other integrant')
-    else  Banda.integrantes.push(integranteNuevo) 
+    if (this.integrantes.some((obj => obj.instrumento.toLowerCase().trim() === 'bateria' ))) console.log('add other integrant')
+    else  this.integrantes.push(integranteNuevo) 
 
   }
 }
