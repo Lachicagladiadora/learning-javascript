@@ -72,11 +72,33 @@ class Classes{
     constructor({
         name,
         description,
-        teacher
+        teacher,
+        video,
+        contributions,
+        questions
     }){
-        this.name=name;
-        this.description=description;
-        this.teacher=teacher
+        this._name=name;
+        this._description=description;
+        this.teacher=teacher;
+        this.video=video;
+        this.contributions=contributions;
+        this.questions=questions
+    }
+
+    get name(){
+        return this._name
+    }
+    get description(){
+        return this._description
+    }
+
+    set name(newNameClasses){
+        if(!newNameClasses)console.error('no exist newNameClasses')
+        else this._name=newNameClasses
+    }
+    set description(otherDescription){
+        if(!otherDescription) console.error('no exist other description')
+        else this._description
     }
 }
 
@@ -92,6 +114,7 @@ class Course{
         this.comments=comments;
         this.resources=resources
     }
+    
     get name(){
         return this._name
     }
@@ -146,7 +169,7 @@ const schoolWeb=new LearningPath({
 const schoolData=new LearningPath({
     name: 'School Data Science',
     courses: [
-        'Basic Programming',
+        basicProgrammingCourse,
         'Data Analytics',
         'cfvgbhunj',
     ]
@@ -154,7 +177,7 @@ const schoolData=new LearningPath({
 const schoolVgs=new LearningPath({
     name:'School Videogames',
     courses: [
-        'Basic Programming',
+        basicProgrammingCourse,
         'Introduction of videogames',
         'Unity course', 
         'Unreal course'
@@ -173,10 +196,10 @@ class Student{
         approvedCourses=[],
         learningPaths=[],
     }) {
-        this.name=name;
-        this.userName=userName;
+        this._name=name;
+        this._userName=userName;
         this.points=points;
-        this.email=email;
+        this._email=email;
         this.socialMedia={
             twitter,
             instagram,
@@ -185,6 +208,29 @@ class Student{
         this.approvedCourses=approvedCourses;
         this.learningPaths=learningPaths;
     }
+    get name(){
+        return this._name
+    }
+    get userName(){
+        return this._userName
+    } 
+    get email(){
+        return this._email
+    }
+
+    set name(otherNameStudent){
+        if(!this._name)console.error('no exist name of student')
+        else this._name=otherNameStudent
+    }
+    set userName(otherUserName){
+        if(!this._userName)console.error('no exist name of student')
+        else this._userName=otherUserName
+    }
+    set email(otherEmail){
+        if(!this._email)console.error('no exist email of student')
+        else this._email=otherEmail
+    }
+
 }
 
 const pablito = new Student({
