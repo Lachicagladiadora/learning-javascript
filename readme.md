@@ -50,6 +50,8 @@
     * object basic level
         1. playground 1: class management (manejo de clases)
 
+    * POO: mini platzi
+
 ## challenges
     - challenge: rock paper scissors game
     - game with objects
