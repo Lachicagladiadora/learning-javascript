@@ -68,6 +68,34 @@ const fito = {
 //Programacion Orientada a Objetos
 //Crearemos instancias a partir del prototype
 
+function videoPlay(id){
+    const urlSecret="https://platziultrasecreto.com/" + id;
+    console.log('Se esta reproduciendo desde la url'+ urlSecret)
+}
+
+function videoPause(id){
+    const urlSecret="https://platziultrasecreto.com/" + id;
+    console.log('Se esta pausando la url'+ urlSecret)
+}
+
+export class MiniPlatziClass{
+    constructor({
+        name,
+        videoID
+    }) {
+        this.name=name;
+        this.videoID=videoID
+    }
+    play(){
+        videoPlay(this.videoID)
+    }
+    pause(){
+        videoPause(this.videoID)
+    }
+}
+
+
+
 class Classes{
     constructor({
         name,
