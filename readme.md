@@ -49,6 +49,7 @@
 
     * object basic level
         1. playground 1: class management (manejo de clases)
+        2. playground 2: control access with get and set (controlar accesos con get y set)
 
     * POO: mini platzi
 
