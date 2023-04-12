@@ -55,11 +55,60 @@ export class Course {
   
     set name(nuevoNombrecito) {
       // Tu código aquí 👈
-      if(typeof(nuevoNombrecito)==='string'){
-        this._name=nuevoNombrecito
-        
+      /*
+      let newNombre = nuevoNombrecito.trim()
+      if (typeof (nuevoNombrecito) === 'string') {
+        let newName = newNombre.split(' ')
+        return newName
+        function mayusculas(newName) {
+          this._name =newName[0].charAt(0).toUpperCase() + newName.slice(1).toLowerCase()
+          console.log(mayusculas)
+        }
       } else {
-        console.warn('invalid name')
+        console.warn('that name is invalid, use only letter characters')
+      }
+    }*/
+
+      if(typeof(nuevoNombrecito)==='string'){
+        if(nuevoNombrecito.length!==0){
+          let newName=nuevoNombrecito.trim()
+          return(this._name=newName.charAt[0].toUpperCase()+newName.slice().toLowerCase())
+        }
+      } else{
+        console.warn('that name is invalid, use only letter characters')
       }
     }
   }
+
+
+
+
+
+
+//other code
+export class Course {
+  constructor({
+    name,
+    classes = [],
+  }) {
+    this.name = name;
+    this.classes = classes;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  set name(nuevoNombrecito) {
+    if (typeof nuevoNombrecito === "string") {
+      nuevoNombrecito = nuevoNombrecito.trim()
+      if (nuevoNombrecito.length !== 0) {
+        let words = nuevoNombrecito.split(" ")
+        let nuevoNombrecitoMayusculas = words.map((word) => {
+          return word[0]?.toUpperCase() + word.substring(1);
+        }).join(" ")
+        this._name = nuevoNombrecitoMayusculas
+      }
+    }
+  }
+}
