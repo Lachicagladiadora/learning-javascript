@@ -78,7 +78,7 @@ function videoPause(id){
     console.log('Se esta pausando la url'+ urlSecret)
 }
 
-export class MiniPlatziClass{
+/*export*/class MiniPlatziClass{
     constructor({
         name,
         videoID
@@ -134,13 +134,17 @@ class Course{
     constructor({
         name,
         classes=[],
+        isFree=false,
+        lang='spanish',
         comments=[],
         resources=[]
     }) {
         this._name=name;
         this.classes=classes;
+        this.isFree=isFree;
+        this.lang=lang;
         this.comments=comments;
-        this.resources=resources
+        this.resources=resources;
     }
     
     get name(){
@@ -157,6 +161,7 @@ class Course{
 
 const basicProgrammingCourse=new Course ({
     name:'Free Basic Programming Course',
+    isFree:true,
 })
 // Course.basicProgrammingCourse.name //Free Basic Programming Course
 // Course.basicProgrammingCourse.name='new name' //new name
@@ -173,6 +178,7 @@ const cssCourse=new Course ({
 })
 const cssPractice=new Course ({
     name:'CSS Practice Course',
+    lang:'english',
 })
 
 class LearningPath{
@@ -211,6 +217,9 @@ const schoolVgs=new LearningPath({
         'Unreal course'
     ]
 })
+
+
+
 
 class Student{
     constructor({
@@ -258,10 +267,47 @@ class Student{
         if(!this._email)console.error('no exist email of student')
         else this._email=otherEmail
     }
-
 }
 
-const pablito = new Student({
+class FreeStudent extends Student{
+    constructor(props){
+        super(props)
+    }
+    approveCourse(newCourse){
+        if (newCourse.isFree){
+            this.approvedCourses.push(newCourse)
+        } else {
+            console.warn('we are sorry '+this.name+', you can only take free courses')
+        }
+    }
+}
+
+class BasicStudent extends Student{
+    constructor(props){
+        super(props)
+    }
+    approveCourse(newCourse){
+        if (newCourse.lang!=='english'){
+            this.approvedCourses.push(newCourse)
+        } else {
+            console.warn('we are sorry '+this.name+', you can not english courses')
+        }
+    }
+}
+
+class ExpertStudent extends Student{
+    constructor(props){
+        super(props)
+    }
+    approveCourse(newCourse){
+        this.approvedCourses.push(newCourse)
+    }
+}
+
+
+
+
+const pablito = new FreeStudent({
     name:'Pablito',
     userName:'pablito_clavito',
     email:'pablito@pablo.com',
@@ -271,7 +317,7 @@ const pablito = new Student({
         schoolWeb
     ]
 })
-const carlos = new Student({
+const carlos = new BasicStudent({
     name:'Carlos',
     userName:'carlitos',
     email:'carlitos@carlos.com',

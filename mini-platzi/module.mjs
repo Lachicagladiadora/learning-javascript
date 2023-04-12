@@ -1,5 +1,5 @@
 console.log('djcn')
-import{MiniPlatziClass} from "./miniPlatzi.mjs";
+import{MiniPlatziClass} from "./miniPlatzi.js";
 
 const class67= new MiniPlatziClass({
     name:"JavaScript: orientado a objetos, basado en prototipos",
