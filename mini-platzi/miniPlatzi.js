@@ -68,6 +68,25 @@ const fito = {
 //Programacion Orientada a Objetos
 //Crearemos instancias a partir del prototype
 
+class Comment{
+    constructor({
+        content,
+        studentName,
+        studentRole='student'
+    }) {
+        this.content=content;
+        this.studentName=studentName;
+        this.studentRole=studentRole;
+        this.likes=0;
+    }
+
+    post (){
+        console.log(this.studentName+'('+this.studentRole+')')
+        console.log(this.likes+'likes')
+        console.log(this.content)
+    }
+}
+
 function videoPlay(id){
     const urlSecret="https://platziultrasecreto.com/" + id;
     console.log('Se esta reproduciendo desde la url'+ urlSecret)
@@ -245,6 +264,15 @@ class Student{
         this.approvedCourses=approvedCourses;
         this.learningPaths=learningPaths;
     }
+
+    postComment(comment){
+        const comment=new Comment({
+            content:commentContent,
+            studentName:this.name
+        });
+        comment.post();
+    }
+
     get name(){
         return this._name
     }
