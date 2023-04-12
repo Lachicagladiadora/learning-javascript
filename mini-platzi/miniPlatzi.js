@@ -265,7 +265,7 @@ class Student{
         this.learningPaths=learningPaths;
     }
 
-    postComment(comment){
+    postComment(commentContent){
         const comment=new Comment({
             content:commentContent,
             studentName:this.name
@@ -332,7 +332,23 @@ class ExpertStudent extends Student{
     }
 }
 
+class TeacherStudent extends Student{
+    constructor(props) {
+        super(props)
+    }
+    approveCourse(newCourse){
+        this.approvedCourses.push(newCourse)
 
+    }
+    postComment(Comment){
+        const comment=new Comment({
+            content:this.content,
+            studentName:this.name,
+            studentRole:'teacher'
+        });
+        comment.post();
+    }
+}
 
 
 const pablito = new FreeStudent({
@@ -355,4 +371,11 @@ const carlos = new BasicStudent({
         schoolVgs,
         schoolData,
     ]
+})
+
+const mateo = new BasicStudent({
+    name:'Mateo',
+    userName:'prof',
+    email:'prof@zskz.com',
+    instagram:'profABC',
 })
