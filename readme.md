@@ -52,7 +52,7 @@
         2. playground 2: control access with get and set (controlar accesos con get y set)
         3. playground 3: override legacy methods (sobreescribir metodos heredados)
 
-    * POO: mini platzi
+    * 
 
 ## challenges
     - challenge: rock paper scissors game
@@ -60,6 +60,7 @@
     - game moving ball with keyboard
     - game taming horses
     - calculator (calculator with objects)
+    - POO: mini platzi
 
 ## Test
     - javascript test
