@@ -50,6 +50,7 @@
     * object basic level
         1. playground 1: class management (manejo de clases)
         2. playground 2: control access with get and set (controlar accesos con get y set)
+        3. playground 3: override legacy methods (sobreescribir metodos heredados)
 
     * POO: mini platzi
 
