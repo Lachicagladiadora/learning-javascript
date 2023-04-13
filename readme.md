@@ -47,7 +47,7 @@
         1. playground 1: create a closure to add (crea un closure para sumar)
         2. playground 2: closure to store pet data (closure para almacenar datos de mascotas)
 
-    * POO basic level
+    *  POO basic level
         1. playground 1: class management (manejo de clases)
         2. playground 2: control access with get and set (controlar accesos con get y set)
         3. playground 3: override legacy methods (sobreescribir metodos heredados)
