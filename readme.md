@@ -29,7 +29,7 @@
     19. object-oriented programming (POO)
         - object literal and prototype
         - practice object methods
-    20.
+    20. static and uses in prototype object (static attributes and methods in prototype object)
 
 
 ## exercises to practice
