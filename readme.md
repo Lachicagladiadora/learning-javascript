@@ -30,6 +30,8 @@
         - object literal and prototype
         - practice object methods
     20. static and uses in prototype object (static attributes and methods in prototype object)
+        -working Object.defineProperty
+    21. 
 
 
 ## exercises to practice
