@@ -29,8 +29,9 @@
     19. object-oriented programming (POO)
         - object literal and prototype
         - practice object methods
-    20. static and uses in prototype object (static attributes and methods in prototype object)
-        -working Object.defineProperty
+        - static and uses in prototype object (static attributes and methods in prototype object)
+            * working Object.defineProperty
+    20. 
     21. 
 
 
