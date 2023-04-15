@@ -31,6 +31,7 @@
         - practice object methods
         - static and uses in prototype object (static attributes and methods in prototype object)
             * working Object.defineProperty
+        - shallow copy
     20. 
     21. 
 
