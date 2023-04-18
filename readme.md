@@ -33,6 +33,8 @@
             * working Object.defineProperty
         - shallow copy
         - JSON.parse y JSON.stringify
+        - recursion
+        
     20. 
     21. 
 
