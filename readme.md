@@ -32,6 +32,7 @@
         - static and uses in prototype object (static attributes and methods in prototype object)
             * working Object.defineProperty
         - shallow copy
+        - JSON.parse y JSON.stringify
     20. 
     21. 
 
