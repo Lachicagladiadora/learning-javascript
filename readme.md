@@ -18,15 +18,20 @@
     9. operators (types)
     10. if conditional (if , else if , and else)
     11. switch conditional (case and default)
-    12. array (definition and mutability)
-    13. loops (for, for...of and while)
-    14. objects (definition and constructive function)
-    15. array transversal methods (.filter, .map, .find, .forEach, and .some)
-    16. manipulation DOM (connect JS to HTML, reading and writing HTML from JS)
-        -DOM with appendchild
-    17. events and addEventListener in JS (how to create simple events and with functions)
-    18. debugging
-    19. object-oriented programming (POO)
+    12. basic math for JS
+        - basic formulas
+        - math workshop
+    13. array (definition and mutability)
+    14. loops (for, for...of and while)
+    15. objects (definition and constructive function)
+        - classes
+    16. array transversal methods (.filter, .map, .find, .forEach, and .some)
+    17. manipulation DOM (connect JS to HTML, reading and writing HTML from JS)
+        - DOM with appendchild
+        - practice DOM 1
+    18. events and addEventListener in JS (how to create simple events and with functions)
+    19. debugging
+    20. object-oriented programming (POO)
         - object literal and prototype
         - practice object methods
         - static and uses in prototype object (static attributes and methods in prototype object)
@@ -34,9 +39,10 @@
         - shallow copy
         - JSON.parse y JSON.stringify
         - recursion
-        
-    20. 
-    21. 
+        - deep copy with recursion
+    21. forms
+        - web forms
+    22. 
 
 
 ## exercises to practice
@@ -58,6 +64,7 @@
         1. playground 1: class management (manejo de clases)
         2. playground 2: control access with get and set (controlar accesos con get y set)
         3. playground 3: override legacy methods (sobreescribir metodos heredados)
+        4. playground 4: freeze an object recursively (hacer freeze de un objeto de forma recursiva)
 
     * 
 
