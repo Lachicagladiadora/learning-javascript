@@ -1,0 +1,52 @@
+:root{
+    --blue: #214ab1;
+    --skyBlue: #c4ece2;
+    
+    --fontType:  Georgia, 'Times New Roman', Times, serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--fontType);
+}
+
+body{
+    position: relative;
+    border: solid 3px rgb(192, 218, 23);
+    background: #2c4c41;
+
+}
+
+h1{
+    text-align: right;
+    margin-right: 20%;
+}
+
+section{
+    margin: auto;
+    max-width: 900px;
+    border: solid 2px olivedrab;
+}
+
+label{
+    border: solid 2px palevioletred;
+    margin-right: 500px;
+    
+}
+.name input,
+.last-name input,
+.age input,
+.email input{
+    color: chocolate;
+    margin-bottom: 1rem;
+    max-width: 600px;
+    width: max-content;
+    border: solid 2px #d8357c;
+    border-radius: 1rem;
+    min-width: 6rem;
+    height: 2rem;
+    text-align: center;
+
+}
