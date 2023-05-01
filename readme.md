@@ -43,7 +43,7 @@
     21. forms
         - web forms
         - validate form (form2)
-    22. 
+    22. HTTP requests
 
 
 ## exercises to practice
