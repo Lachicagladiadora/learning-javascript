@@ -19,6 +19,7 @@ p{
     width: 30rem; */
     font-family: monospace;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .dialog{
@@ -28,7 +29,7 @@ p{
       color: rgb(16, 60, 23);
    padding: 20px;
    position: relative;
-   width: 600px;
+   max-width: 600px;
    /* height: 300px; */
    margin: 0 auto;
    font-family: sans-serif;
@@ -52,6 +53,9 @@ p{
 
 
 .chuck-norris{
+    cursor: pointer;
  position: absolute;
- left: 100px;
+ left: 200px;
+ top: 110px;
+ height: 400px;
 }
