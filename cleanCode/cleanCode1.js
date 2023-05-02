@@ -34,3 +34,51 @@ locations.forEach((location) => {
 // 4. Do not include unnecessary context in your code ->  If your class/object says something; don't repeat it inside variables
 const car = {brandCar:'Honda',modelCar:'Accord'}  // It should not be done
 const auto = {brand:'Honda',model:'Accord'}  // As you should do
+
+
+// 5. Use predefined arguments instead of conditionals -> Predefined arguments are more organized than conditionals
+// It should not be done
+createStore = (nameUsed) => {
+    const nameUsed = nameUsed || 'undefined'
+    // stuff
+}
+// As you should do
+createStore = (nameUsed = 'undefined') => {
+    // stuff
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// It should not be done
+
+// As you should do
