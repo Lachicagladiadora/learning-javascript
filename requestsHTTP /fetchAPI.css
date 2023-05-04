@@ -1,0 +1,14 @@
+
+:root{
+    --orange: #ff9900;
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--orange);
+}
