@@ -8,7 +8,7 @@
         - global scope(var, let, const)
         - function scope(let, const)
         - block scope(let, const)
-        - reassignment and redeclaration of variables
+        - reassignment and declaration of variables
         - strict mode
     5. closure
         - lexical scope
