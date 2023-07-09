@@ -69,13 +69,6 @@
 
     * 
 
-## challenges
-    - challenge: rock paper scissors game
-    - game with objects
-    - game moving ball with keyboard
-    - game taming horses
-    - calculator (calculator with objects)
-    - POO: mini platzi
 
 ## Test
     - javascript test
