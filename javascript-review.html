@@ -32,7 +32,7 @@
 </script>
 
 <script>
-  // condirionals
+  // conditionals
   // const test = !!('first condition' == 'first condition')
   // !!('first condition' == 'first condition')
   // Boolean('first condition' == 'first condition')
@@ -45,7 +45,7 @@
 </script>
 
 <script>
-  // bucles
+  // loops
   // for(let i in {one:'first', two:'second', three:'third', }){
   //   console.log('element with "for in":',i)
   // }
@@ -98,6 +98,7 @@
 </script>
 
 <script>
+  // this
   // console.log('What is "this"?', this) // hace referencia al contexto
   
   // const anyObject = {
@@ -137,34 +138,87 @@
 </script>
 
 <script>
-  const appElement = document.getElementById('app')
-  const idPokemon = Math.floor(Math.random()*350)
+  // class
+  // const appElement = document.getElementById('app')
+  // const idPokemon = Math.floor(Math.random()*350)
    
-  class pokemon {
-    constructor(){}
+  // class pokemon {
+  //   constructor(){}
 
-    apiPokemon(){
-      console.log('running')
-      return fetch(`https://pokeapi.co/api/v2/pokemon/${idPokemon}`).then(response => 
-        response.json()
-      )
-    }
-    renderDataPokemon(imgPokemon, name){
-      const imgElement = document.createElement('img')
-      const nameElement = document.createElement('h3')
-      imgElement.src = imgPokemon
-      imgElement.width = '250'
-      nameElement.innerText=name
-      appElement.appendChild(imgElement)
-      appElement.appendChild(nameElement)
-    }
-  }
-  const somePokemon = new pokemon()
-  const dataPokemon = somePokemon.apiPokemon().then(data => {
-    console.log('it is running pokemon ', data)
-    somePokemon.renderDataPokemon(data.sprites.front_default, data.name)
-  })
-  console.log(dataPokemon)
+  //   apiPokemon(){
+  //     console.log('running')
+  //     return fetch(`https://pokeapi.co/api/v2/pokemon/${idPokemon}`).then(response => 
+  //       response.json()
+  //     )
+  //   }
+  //   renderDataPokemon(imgPokemon, name){
+  //     const imgElement = document.createElement('img')
+  //     const nameElement = document.createElement('h3')
+  //     imgElement.src = imgPokemon
+  //     imgElement.width = '250'
+  //     nameElement.innerText=name
+  //     appElement.appendChild(imgElement)
+  //     appElement.appendChild(nameElement)
+  //   }
+  // }
+  // const somePokemon = new pokemon()
+  // const dataPokemon = somePokemon.apiPokemon().then(data => {
+  //   console.log('it is running pokemon ', data)
+  //   somePokemon.renderDataPokemon(data.sprites.front_default, data.name)
+  // })
+  // console.log(dataPokemon)
 </script>
-<!-- </body> -->
+
+<script>
+  // event & DOM
+      // const buttonsElements = document.querySelectorAll('.button')
+      // if(!buttonsElements) console.warn('not exist class "button" for the "buttonsElements"')
+      // buttonsElements.forEach((element, index) => {
+      //   console.log(element)
+      //   element.addEventListener('click', event => {
+      //     console.log(event.target.innerHTML)
+      //     event.target.style.color = 'red'
+      //   })
+      // })
+</script>
+
+<script>
+   // closures
+      // function returnFunction(firstParameter) {
+      //   console.log(`%cHello father`,'color: pink')
+      //   let counter = firstParameter
+      //   return function(otherParameter) {
+      //     console.log(`%cHello son`,'color:#adedfa')
+      //     counter = counter + otherParameter || counter + 1
+      //     return counter
+      //     // return function() {
+      //     // console.log(`%cHello grandson`,'color: orange')
+      //     // }
+      //   }
+      // }
+      // // console.log(returnFunction)
+      // // console.log(`%c${returnFunction()}`, 'background: #222; color: #bada55');
+      // // console.log(returnFunction()())
+      // // console.log(returnFunction()()())
+
+      // const saveValue = returnFunction(0)
+      // saveValue(20)
+      // saveValue()
+
+      // const otherSaveValue = returnFunction(8)
+      // otherSaveValue(2)
+      // // let theReturned2 = 'returned 2'
+
+      // console.log(saveValue(), otherSaveValue())
+      // // console.log(`%c${theReturned2}`, 'color: #127878')
+
+      // const closure = x => y => x + y
+      // const suma1 = closure(1)
+      // console.log(suma1(2))
+
+      // // function executeFunction(functionParameter, stringParameter) {
+      // //   aFunction()
+      // //   console.log(stringParameter)
+      // // }
+</script>
 </html>
